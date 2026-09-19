@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#083d56" />
+  <meta name="description" content="JalDost turns practical Delhi water-saving actions into visible daily progress." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%23083d56' d='M32 3C22 16 12 27 12 40a20 20 0 0040 0C52 27 42 16 32 3z'/%3E%3Ccircle cx='32' cy='41' r='9' fill='%2354c5c1'/%3E%3C/svg%3E" />
+  <title>JalDost — Delhi Water Companion</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="site-header">
+    <a class="brand" href="#/" aria-label="JalDost home">
+      <span class="brand-mark" aria-hidden="true"><span></span></span>
+      <span>JalDost</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#how-it-works" data-landing-link>How it works</a>
+      <a href="#trust" data-landing-link>Our estimates</a>
+      <button class="button button--small button--nav" data-route="dashboard">Open dashboard</button>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1"></main>
+
+  <div class="toast-region" aria-live="polite" aria-atomic="true"></div>
+  <div class="modal-root"></div>
+
+  <template id="landing-template">
+    <div class="landing-page">
+      <section class="hero section" aria-labelledby="hero-title">
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="live-dot"></span> Built for everyday Delhi</p>
+          <h1 id="hero-title">Save water.<br><span>See the difference.</span></h1>
+          <p class="hero__lede">JalDost turns small, practical actions into a daily habit—with visible progress, streaks and estimated litres saved.</p>
+          <div class="hero__actions">
+            <button class="button button--primary" data-route="dashboard">See what you can do today <span aria-hidden="true">→</span></button>
+            <a class="text-link" href="#how-it-works">How JalDost works</a>
+          </div>
+          <p class="hero__note">No sensors. No inflated claims. Just self-reported action and transparent estimates.</p>
+        </div>
+        <div class="hero__product" aria-label="Preview of the JalDost daily experience">
+          <div class="phone-shell">
+            <div class="phone-top"><span>Today</span><span class="mini-streak">🔥 4 days</span></div>
+            <div class="phone-greeting"><small>GOOD MORNING, DELHI</small><strong>One small action.<br>Real momentum.</strong></div>
+            <div class="mini-progress"><span style="width:67%"></span></div>
+            <div class="phone-card phone-card--featured">
+              <div class="action-icon action-icon--blue">↻</div>
+              <div><span class="tag">AT HOME · EASY</span><strong>Reuse RO reject water</strong><small>Use it for mopping or cleaning.</small></div>
+              <div class="reward"><b>~8 L</b><small>+20 XP</small></div>
+            </div>
+            <div class="phone-impact"><div><b>48 L</b><small>estimated saved</small></div><div><b>280</b><small>total XP</small></div></div>
+          </div>
+          <div class="impact-orbit impact-orbit--one"><b>+20 XP</b><span>Action complete</span></div>
+          <div class="impact-orbit impact-orbit--two"><b>48 L</b><span>Estimated impact</span></div>
+        </div>
+      </section>
+
+      <section class="signal-strip" aria-label="JalDost at a glance">
+        <p><strong>Practical actions</strong><span>Made for real routines</span></p>
+        <p><strong>Visible progress</strong><span>Impact you can follow</span></p>
+        <p><strong>Community energy</strong><span>Consistency, together</span></p>
+      </section>
+
+      <section class="section problem" aria-labelledby="problem-title">
+        <div class="section-heading">
+          <p class="eyebrow">The gap</p>
+          <h2 id="problem-title">Awareness is everywhere.<br><span class="muted">Daily action is harder.</span></h2>
+        </div>
+        <div class="problem-grid">
+          <p class="problem-statement">Most people want to save water. But advice often feels vague, impact stays invisible and good intentions disappear into busy days.</p>
+          <div class="problem-turn"><span aria-hidden="true">↓</span><p>JalDost makes the next useful action obvious—and makes consistency worth returning for.</p></div>
+        </div>
+      </section>
+
+      <section class="section how" id="how-it-works" aria-labelledby="how-title">
+        <div class="section-heading section-heading--split"><div><p class="eyebrow">The daily loop</p><h2 id="how-title">A habit you can see grow.</h2></div><p>Designed around action, not endless reading.</p></div>
+        <ol class="steps">
+          <li><span class="step-number">01</span><div class="step-icon">◎</div><h3>Discover</h3><p>Open JalDost and see a short list of useful actions for today.</p></li>
+          <li><span class="step-number">02</span><div class="step-icon">✓</div><h3>Do it</h3><p>Complete an action in real life and record it once.</p></li>
+          <li><span class="step-number">03</span><div class="step-icon">↗</div><h3>Build momentum</h3><p>See estimated savings, earn XP and keep your active-day streak.</p></li>
+          <li><span class="step-number">04</span><div class="step-icon">◇</div><h3>Grow together</h3><p>Reach milestones and join community challenges as JalDost expands.</p></li>
+        </ol>
+      </section>
+
+      <section class="section action-showcase" aria-labelledby="actions-title">
+        <div class="section-heading"><p class="eyebrow">Delhi-relevant by design</p><h2 id="actions-title">Small choices. Clear next steps.</h2></div>
+        <div class="showcase-grid">
+          <article class="showcase-card"><div class="action-icon action-icon--blue">↻</div><span class="tag">AT HOME</span><h3>Reuse RO reject water</h3><p>Collect it for mopping or cleaning instead of sending it straight down the drain.</p><footer><span>Easy</span><strong>~8 L · +20 XP</strong></footer></article>
+          <article class="showcase-card"><div class="action-icon action-icon--orange">!</div><span class="tag">NEIGHBOURHOOD</span><h3>Report a visible leak</h3><p>Note the location and report a leaking public tap or pipe through the right civic channel.</p><footer><span>Medium</span><strong>~25 L · +40 XP</strong></footer></article>
+          <article class="showcase-card"><div class="action-icon action-icon--navy">▤</div><span class="tag">DAILY ROUTINE</span><h3>Choose a bucket</h3><p>Use a bucket where practical instead of leaving water running continuously.</p><footer><span>Easy</span><strong>~18 L · +30 XP</strong></footer></article>
+        </div>
+        <p class="estimate-caption">Values shown are documented estimates for the prototype—not measured household consumption.</p>
+      </section>
+
+      <section class="section impact-story" aria-labelledby="impact-title">
+        <div><p class="eyebrow eyebrow--light">Progress with a purpose</p><h2 id="impact-title">Motivation that points back to the habit.</h2><p>XP celebrates participation. Streaks celebrate consistency. Milestones make meaningful progress visible. The goal is never points for their own sake—it is action that lasts.</p><button class="button button--light" data-route="dashboard">Try the daily experience</button></div>
+        <div class="impact-dashboard" aria-hidden="true"><div class="impact-ring"><div><strong>4</strong><span>day streak</span></div></div><div class="impact-stats"><p><span>Estimated saved</span><b>48 litres</b></p><p><span>Next milestone</span><b>100 L · 48%</b></p><div class="mini-progress mini-progress--light"><span style="width:48%"></span></div></div></div>
+      </section>
+
+      <section class="section delhi-first" aria-labelledby="delhi-title">
+        <div class="delhi-map" aria-hidden="true"><span class="map-line map-line--1"></span><span class="map-line map-line--2"></span><span class="map-line map-line--3"></span><b>DELHI</b><i class="map-pin map-pin--1"></i><i class="map-pin map-pin--2"></i><i class="map-pin map-pin--3"></i></div>
+        <div><p class="eyebrow">Delhi first</p><h2 id="delhi-title">Built around the city we live in.</h2><p>From RO systems in homes to shared taps, schools and RWAs, JalDost starts with routines Delhi residents recognise. The foundation is ready to grow into school challenges, neighbourhood participation and trusted verification.</p><ul class="feature-list"><li>Contextual daily actions</li><li>Future school & RWA communities</li><li>Evidence-aware impact estimates</li></ul></div>
+      </section>
+
+      <section class="section trust" id="trust" aria-labelledby="trust-title">
+        <div class="trust-mark" aria-hidden="true">i</div><div><p class="eyebrow">Trust the label</p><h2 id="trust-title">Estimated means estimated.</h2></div><p>JalDost’s prototype records self-reported actions and applies documented assumptions. It does not claim to measure your water flow. Future action data can include a source, assumption, confidence level and review date—so the evidence can improve without hiding uncertainty.</p>
+      </section>
+
+      <section class="section roadmap" aria-labelledby="roadmap-title"><div class="section-heading section-heading--split"><div><p class="eyebrow">Where this can go</p><h2 id="roadmap-title">Prove the habit. Then expand the movement.</h2></div><p>The current prototype stays focused. Its architecture leaves room for what comes next.</p></div><div class="roadmap-line"><article class="active"><span>NOW</span><h3>Daily action loop</h3><p>Actions, progress, streaks and milestones.</p></article><article><span>NEXT</span><h3>Communities</h3><p>Leaderboards, schools, RWAs and challenges.</p></article><article><span>LATER</span><h3>Stronger verification</h3><p>Community checks, photos and optional smart-water integrations.</p></article></div></section>
+
+      <section class="final-cta"><div><p class="eyebrow eyebrow--light">Your next action is waiting</p><h2>Make today count—one drop at a time.</h2><p>Open your dashboard, choose one practical action and start building a water-wise streak.</p></div><button class="button button--light button--large" data-route="dashboard">Open my dashboard <span aria-hidden="true">→</span></button></section>
+      <footer class="footer"><a class="brand brand--footer" href="#/"><span class="brand-mark" aria-hidden="true"><span></span></span><span>JalDost</span></a><p>Delhi Water Companion · SchoolNet India Hackathon Prototype</p><p>Self-reported actions · Estimated savings</p></footer>
+    </div>
+  </template>
+
+  <template id="dashboard-template">
+    <div class="app-page">
+      <aside class="app-sidebar" aria-label="Dashboard navigation">
+        <a class="brand brand--app" href="#/"><span class="brand-mark" aria-hidden="true"><span></span></span><span>JalDost</span></a>
+        <nav><button class="side-link is-active"><span>⌂</span> Today</button><button class="side-link" data-coming="Progress history"><span>↗</span> Progress</button><button class="side-link" data-open-community><span>♟</span> Community</button><button class="side-link" data-coming="Challenges"><span>◎</span> Challenges</button></nav>
+        <div class="sidebar-note"><span>Prototype mode</span><p>Your activity is saved on this device.</p></div>
+      </aside>
+      <div class="app-main">
+        <header class="app-header"><div><p class="eyebrow">DELHI WATER COMPANION</p><h1>Today</h1></div><div class="profile"><div class="profile-copy"><strong>Shreyansh</strong><span>Water Saver</span></div><span class="avatar" aria-hidden="true">SJ</span></div></header>
+        <div class="dashboard-grid">
+          <section class="daily-column" aria-labelledby="today-actions-title">
+            <div class="dashboard-intro"><div><p class="date-label"></p><h2 id="today-actions-title">What can you do today?</h2><p>Choose one small action. Every completion builds the habit.</p></div><div class="day-progress" aria-label="Daily action progress"><strong><span data-complete-count>0</span>/<span data-action-count>0</span></strong><span>done today</span></div></div>
+            <div class="progress-track" aria-hidden="true"><span data-day-progress></span></div>
+            <div class="action-list" data-action-list></div>
+            <div class="data-note"><span aria-hidden="true">i</span><p><strong>About these numbers</strong> Estimated savings use transparent assumptions and your self-reported actions. They are not sensor measurements.</p></div>
+          </section>
+          <aside class="progress-column" aria-label="Your progress">
+            <section class="progress-hero"><div><p class="eyebrow eyebrow--light">YOUR MOMENTUM</p><span class="streak-icon" aria-hidden="true">🔥</span><strong data-streak>4</strong><h2>day streak</h2><p>Complete one action today to keep it going.</p></div><div class="week-row" data-week-row></div></section>
+            <div class="stat-pair"><article class="stat-card"><span class="stat-icon">≈</span><strong><span data-savings>48</span> L</strong><p>estimated saved</p><small>Self-reported</small></article><article class="stat-card"><span class="stat-icon">✦</span><strong data-xp>280</strong><p>total XP</p><small>Participation</small></article></div>
+            <section class="panel milestone-panel"><div class="panel-heading"><span class="panel-icon">◇</span><div><p class="eyebrow">NEXT MILESTONE</p><h3>100 litre mark</h3></div><strong><span data-milestone-percent>48</span>%</strong></div><div class="progress-track progress-track--thick"><span data-milestone-progress></span></div><p><span data-milestone-remaining>52</span> estimated litres to go</p></section>
+            <section class="panel challenge-panel"><div class="panel-heading"><span class="panel-icon panel-icon--orange">◎</span><div><p class="eyebrow">CURRENT CHALLENGE</p><h3>7-day water-wise week</h3></div></div><div class="challenge-meta"><span><b data-streak>4</b> / 7 active days</span><span>+100 XP</span></div><div class="progress-track"><span data-challenge-progress></span></div></section>
+            <section class="panel community-panel"><div class="panel-heading"><div><p class="eyebrow">COMMUNITY PREVIEW</p><h3>Delhi learners</h3></div><button class="icon-button" data-open-community aria-label="Open community leaderboard">→</button></div><ol class="leader-list"><li><span class="rank">1</span><span class="tiny-avatar tiny-avatar--one">AM</span><p><strong>Aarav M.</strong><small>1,420 XP</small></p></li><li class="is-you"><span class="rank">8</span><span class="tiny-avatar">SJ</span><p><strong>You</strong><small><span data-xp>280</span> XP</small></p></li><li><span class="rank">9</span><span class="tiny-avatar tiny-avatar--two">NS</span><p><strong>Noor S.</strong><small>250 XP</small></p></li></ol></section>
+            <section class="achievement"><span class="achievement-badge">✓</span><div><p class="eyebrow">RECENT ACHIEVEMENT</p><h3>First drop</h3><span>Completed your first action</span></div></section>
+          </aside>
+        </div>
+      </div>
+      <nav class="mobile-nav" aria-label="Mobile dashboard navigation"><button class="is-active"><span>⌂</span>Today</button><button data-coming="Progress history"><span>↗</span>Progress</button><button data-open-community><span>♟</span>Community</button></nav>
+    </div>
+  </template>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>
